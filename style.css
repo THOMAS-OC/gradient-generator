@@ -24,7 +24,13 @@ input[type="color"] {
     display: block;
     position: relative;
     margin: 30px auto;
+    transition-duration: 0.5s;
 }
+
+input[type="color"]:hover {
+    transform: scale(1.03);
+}
+
 
 input[type="color"]::after {
     border: 2px solid white;
@@ -36,8 +42,10 @@ input[type="color"]::after {
     content: "";
     height: 60px;
     transform: translateX(-3%) translateY(-3%);
-    background-color: inherit
+    background-color: inherit;
+
 }
+
 
 
 input[type="range"] {
@@ -54,12 +62,13 @@ div{
 }
 
 div button {
-    width: 40%;
+    width: 90%;
     height: 40px;
     border-radius: 10px;
     cursor: pointer;
     border: none;
     outline: none;
+    border: 2px solid black;
 }
 
 p {
