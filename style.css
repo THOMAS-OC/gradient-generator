@@ -73,6 +73,13 @@ div button {
 
 p {
     font-size: 30px;
-
     text-align: center;
+}
+
+.btn-copy{
+    transition-duration: 0.2s;
+}
+
+.btn-copy:hover {
+    transform: scale(1.03);
 }

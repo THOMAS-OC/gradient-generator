@@ -32,7 +32,12 @@ colorTwo.addEventListener("change", () => {
 })
 
 btnCopy.addEventListener("click", () => {
-    navigator.clipboard.writeText(gradient)
+    btnCopy.innerText = "Code CSS copié !"
+    window.setTimeout(() => {
+        btnCopy.innerText = "Copier !"
+    }, 1000)
+    
+    navigator.clipboard.writeText("background: " + gradient)
 })
 
 
